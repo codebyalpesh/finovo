@@ -30,3 +30,19 @@
 @import url('./section/_testimonial.css');
 @import url('./section/_blog.css');
 @import url('./section/_cta.css');
+
+
+
+
+
+
+
+
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-md);
+  background-color: red;
+  color: pink;
+  padding-top: 66px;
+}
