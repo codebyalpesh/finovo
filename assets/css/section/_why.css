@@ -1,0 +1,82 @@
+/* =========================================
+   WHY SECTION
+========================================= */
+
+.why-section {
+  padding: var(--space-16) 0;
+  background: var(--color-white);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.why-image img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+}
+
+/* Hover effect */
+.why-image img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.why-content {
+  max-width: 520px;
+}
+
+/* Text spacing */
+.why-content .section-title {
+  margin-bottom: var(--space-4);
+}
+
+.why-content .section-text {
+  margin-bottom: var(--space-3);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-lg);
+}
+
+/* CTA */
+.why-content .btn {
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.why-content .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .why-section {
+    padding: var(--space-12) 0;
+  }
+
+  .why-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: var(--space-6);
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .why-image img {
+    border-radius: var(--radius-md);
+  }
+
+}

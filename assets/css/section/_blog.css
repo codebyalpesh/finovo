@@ -1,0 +1,186 @@
+/* =========================================
+   BLOG SECTION
+========================================= */
+
+.blog-section {
+  padding: var(--space-16) 0;
+  background: var(--color-white);
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.blog-section .row {
+  margin-top: var(--space-6);
+}
+
+/* =========================================
+   BLOG CARD
+========================================= */
+
+.blog-card {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+/* Hover */
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.img-cont {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image */
+.img-cont img {
+  width: 100%;
+  display: block;
+  transition: var(--transition-normal);
+}
+
+/* Zoom */
+.blog-card:hover .img-cont img {
+  transform: scale(1.05);
+}
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.img-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 40%,
+    rgba(0,0,0,0.5) 100%
+  );
+
+  opacity: 0.7;
+  transition: var(--transition-fast);
+}
+
+.blog-card:hover .img-overlay {
+  opacity: 0.9;
+}
+
+/* =========================================
+   CATEGORY BADGE
+========================================= */
+
+.blog-badge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+
+  padding: var(--space-1) var(--space-3);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+
+  background: var(--color-primary);
+  color: var(--color-white);
+
+  border-radius: var(--radius-full);
+  z-index: 2;
+}
+
+/* =========================================
+   CONTENT WRAPPER (NEW - STRUCTURE FIX)
+========================================= */
+
+.blog-meta,
+.blog-title,
+.blog-link {
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+/* =========================================
+   META
+========================================= */
+
+.blog-meta {
+  margin-top: var(--space-3);
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.blog-title {
+  margin: var(--space-2) 0;
+
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+/* =========================================
+   LINK
+========================================= */
+
+.blog-link {
+  margin-top: auto; /* push to bottom */
+
+  padding-bottom: var(--space-4);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  color: var(--color-primary);
+  text-decoration: none;
+
+  transition: var(--transition-fast);
+}
+
+.blog-link:hover {
+  color: var(--color-primary-hover);
+  transform: translateX(4px);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .blog-section {
+    padding: var(--space-12) 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .blog-title {
+    font-size: var(--font-size-sm);
+  }
+
+}

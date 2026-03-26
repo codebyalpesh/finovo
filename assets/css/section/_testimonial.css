@@ -1,0 +1,161 @@
+/* =========================================
+   TESTIMONIAL SECTION
+========================================= */
+
+.testimonial-section {
+  padding: var(--space-16) 0;
+  background: var(--color-gray-50);
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.testimonial-section .row {
+  margin-top: var(--space-6);
+}
+
+/* =========================================
+   TESTIMONIAL CARD
+========================================= */
+
+.testimonial-card {
+  position: relative;
+  height: 100%;
+
+  padding: var(--space-6);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+/* Hover */
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* =========================================
+   RATING
+========================================= */
+
+.testimonial-rating {
+  margin-bottom: var(--space-3);
+}
+
+.testimonial-rating i {
+  color: var(--color-accent);
+  font-size: 14px;
+}
+
+/* =========================================
+   TEXT (WITH QUOTE)
+========================================= */
+
+.testimonial-text {
+  position: relative;
+
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-lg);
+  color: var(--color-gray-700);
+
+  margin-bottom: var(--space-4);
+}
+
+/* Decorative quote */
+.testimonial-text::before {
+  content: "“";
+  position: absolute;
+  top: -10px;
+  left: -8px;
+
+  font-size: 40px;
+  color: var(--color-primary);
+  opacity: 0.2;
+}
+
+/* =========================================
+   USER
+========================================= */
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Avatar */
+.owl-carousel .testimonial-user .user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+/* Name */
+.testimonial-user h5 {
+  margin-bottom: var(--space-1);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+/* Role */
+.testimonial-user span {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+.owl-carousel .owl-stage {
+  padding: var(--space-4) 0;
+}
+
+/* Make owl stage flex */
+.owl-stage {
+  display: flex;
+}
+
+/* Make each item stretch */
+.owl-item {
+  display: flex;
+  height: auto;
+}
+
+/* Make card full height */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .testimonial-section {
+    padding: var(--space-12) 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .testimonial-card {
+    padding: var(--space-5);
+    text-align: center;
+  }
+
+  .testimonial-user {
+    flex-direction: column;
+  }
+
+  .testimonial-text::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}

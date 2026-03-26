@@ -1,0 +1,186 @@
+/* =========================================
+   CTA SECTION
+========================================= */
+
+.cta-section {
+  position: relative;
+  padding: var(--space-16) 0;
+
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-hover)
+  );
+
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+/* Glow background */
+.cta-section::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(100px);
+
+  top: -100px;
+  left: -100px;
+
+  z-index: 0; /* FIX */
+}
+
+/* Ensure content above glow */
+.cta-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.cta-title {
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-3);
+}
+
+.cta-subtitle {
+  font-size: var(--font-size-md);
+  color: rgba(255, 255, 255, 0.9);
+
+  max-width: 600px;
+  margin: 0 auto var(--space-4);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.cta-buttons {
+  margin-top: var(--space-4);
+}
+
+/* Primary CTA */
+.cta-section .btn-primary {
+  display: inline-flex;
+  align-items: center;
+
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: none;
+
+  padding: var(--space-3) var(--space-6);
+  font-weight: var(--font-weight-medium);
+
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+
+  transition: var(--transition-fast);
+}
+
+.cta-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Outline CTA */
+.cta-section .btn-outline-primary {
+  display: inline-flex;
+  align-items: center;
+
+  border: 1px solid rgba(255,255,255,0.6);
+  color: var(--color-white);
+
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+
+  transition: var(--transition-fast);
+}
+
+.cta-section .btn-outline-primary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* =========================================
+   BUTTON ICON
+========================================= */
+
+.btn-icon {
+  margin-left: var(--space-2);
+  font-size: 14px;
+  transition: var(--transition-fast);
+}
+
+/* Scoped hover (FIX) */
+.cta-section .btn-primary:hover .btn-icon {
+  transform: translateX(4px);
+}
+
+/* =========================================
+   URGENCY LINE
+========================================= */
+
+.cta-urgency {
+  margin-top: var(--space-3);
+}
+
+.cta-urgency small {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: rgba(255,255,255,0.95);
+
+  animation: pulseText 2s ease-in-out infinite;
+}
+
+/* Animation */
+@keyframes pulseText {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+/* =========================================
+   TRUST LINE
+========================================= */
+
+.cta-trust {
+  margin-top: var(--space-2);
+}
+
+.cta-trust small {
+  font-size: var(--font-size-xs);
+  color: rgba(255,255,255,0.8);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .cta-section {
+    padding: var(--space-12) 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .cta-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-section .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================= -->
+    <!-- BASIC META TAGS -->
+    <!-- ============================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Finovo – Smart Money, Simple Life</title>
+    <meta name="description"
+        content="Finovo is an AI-powered personal finance tracker to manage your spending, investments, and savings. Get smart insights and budgeting suggestions with a minimal, easy-to-use app-first design.">
+    <meta name="keywords"
+        content="personal finance tracker, budgeting app, AI finance app, spending tracker, investment tracker, savings tracker, Finovo">
+    <meta name="author" content="Finovo">
+
+    <link rel="canonical" href="https://finovo.github.io/">
+
+    <!-- ============================= -->
+    <!-- OPEN GRAPH -->
+    <!-- ============================= -->
+    <meta property="og:title" content="Finovo – Smart Money, Simple Life">
+    <meta property="og:description"
+        content="Manage your spending, investments, and savings effortlessly with Finovo. Smart insights, budgeting tips, and a minimal app-first design.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finovo.github.io/">
+    <meta property="og:site_name" content="Finovo">
+
+    <!-- ============================= -->
+    <!-- TWITTER CARD -->
+    <!-- ============================= -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Finovo – Smart Money, Simple Life">
+    <meta name="twitter:description"
+        content="Track your spending, savings, and investments with Finovo. AI-powered insights and simple, app-first design.">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
+    <meta name="twitter:site" content="@Finovo">
+
+    <!-- ========================= -->
+    <!-- FAVICONS - FULL SUPPORT -->
+    <!-- ========================= -->
+
+    <!-- Standard Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon/favicon-48x48.png">
+
+    <!-- Apple Touch Icon (iOS Safari) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+
+    <!-- Android / Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+
+    <!-- Windows Tile -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/mstile-150x150.png">
+
+    <!-- Theme Color (Mobile Browser UI) -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ============================= -->
+    <!-- BOOTSTRAP 5 CDN -->
+    <!-- ============================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+
+    <!-- ============================= -->
+    <!-- HEADER / NAVBAR -->
+    <!-- ============================= -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand brand-logo" href="index.html">
+                    Finovo
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navMenu">
+
+                    <ul class="navbar-nav ms-auto nav-links">
+
+                        <li class="nav-item">
+                            <a class="nav-link active nav-link-custom" href="#">Home</a>
+                        </li>
+
+                        <!-- Product -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-link-custom dropdown-toggle-custom" href="#"
+                                data-bs-toggle="dropdown">
+                                Product <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom">
+                                <li><a class="dropdown-item" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Mobile App</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Features -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-link-custom dropdown-toggle-custom" href="#"
+                                data-bs-toggle="dropdown">
+                                Features <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom">
+                                <li><a class="dropdown-item" href="#">Expense Tracking</a></li>
+                                <li><a class="dropdown-item" href="#">Smart Insights</a></li>
+                                <li><a class="dropdown-item" href="#">Investment Tracking</a></li>
+                                <li><a class="dropdown-item" href="#">Budget Planning</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#">Testimonials</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#">FAQ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- CTA Buttons -->
+                    <div class="d-flex align-items-center ms-lg-4 nav-cta">
+                        <a href="#" class="btn btn-outline-primary btn-login">Login</a>
+                        <a href="#" class="btn btn-primary btn-cta">Get Started</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================= -->
+    <main>
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-lg-5 g-4">
+
+                    <!-- Left Content -->
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="hero-content">
+
+                            <h1 class="hero-title">
+                                Take Control of Your
+                                <span class="hero-highlight">Money</span> — Effortlessly
+                            </h1>
+
+                            <p class="hero-subtitle">
+                                Finovo helps you track expenses, manage investments, and build smarter budgets — all in
+                                one simple, powerful app.
+                            </p>
+
+                            <div class="hero-badge">
+                                <span class="badge bg-light text-dark badge-custom">
+                                    ⭐ 4.8 Rating • 10K+ Users
+                                </span>
+                            </div>
+
+                            <div class="hero-cta d-flex flex-wrap">
+                                <a href="#" class="btn btn-primary btn-hero-primary">
+                                    Start Tracking for Free
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-hero-secondary">
+                                    View Demo
+                                </a>
+                            </div>
+
+                            <!-- Trust -->
+                            <div class="hero-trust">
+                                <small class="hero-trust-text">
+                                    No credit card required • 100% secure • AI-powered insights that help you save more
+                                </small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="hero-image text-center">
+                            <img loading="lazy" src="https://placehold.co/800x400" alt="Finovo App Dashboard Preview"
+                                class="img-fluid hero-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-section reveal">
+            <div class="container text-center">
+
+                <!-- Heading -->
+                <h2 class="section-title">
+                    Trusted by Smart Money Managers
+                </h2>
+
+                <p class="section-subtitle">
+                    Join thousands of users who are simplifying their finances with Finovo
+                </p>
+
+                <!-- Logos -->
+                <div class="clients-logos d-flex flex-wrap justify-content-center align-items-center mt-4">
+
+                    <div class="client-logo">
+                        <img loading="lazy" src="https://placehold.co/160x80" alt="Client Logo" class="img-fluid">
+                    </div>
+
+                    <div class="client-logo">
+                        <img loading="lazy" src="https://placehold.co/160x80" alt="Client Logo" class="img-fluid">
+                    </div>
+
+                    <div class="client-logo">
+                        <img loading="lazy" src="https://placehold.co/160x80" alt="Client Logo" class="img-fluid">
+                    </div>
+
+                    <div class="client-logo">
+                        <img loading="lazy" src="https://placehold.co/160x80" alt="Client Logo" class="img-fluid">
+                    </div>
+
+                    <div class="client-logo">
+                        <img loading="lazy" src="https://placehold.co/160x80" alt="Client Logo" class="img-fluid">
+                    </div>
+
+                </div>
+
+                <!-- Stats -->
+                <div class="clients-stats mt-5 d-flex justify-content-center flex-wrap">
+
+                    <div class="stat">
+                        <h4>10K+</h4>
+                        <p>Active Users</p>
+                    </div>
+
+                    <div class="stat">
+                        <h4>₹50M+</h4>
+                        <p>Tracked Transactions</p>
+                    </div>
+
+                    <div class="stat">
+                        <h4>4.8★</h4>
+                        <p>User Rating</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="features-section reveal">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="section-title">
+                        Everything You Need to Manage Your Money
+                    </h2>
+                    <p class="section-subtitle">
+                        Simple tools designed to help you track, save, and grow your finances
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="row g-4">
+
+                    <!-- Feature 1 -->
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <span class="icon-cont">
+                                <i class="fas fa-wallet"></i>
+                            </span>
+                            <h3>Expense Tracking</h3>
+                            <p>
+                                Monitor your daily spending with real-time tracking and clear insights.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <span class="icon-cont">
+                                <i class="fas fa-chart-line"></i>
+                            </span>
+                            <h3>Smart Insights</h3>
+                            <p>
+                                Get AI-powered recommendations to optimize your spending and savings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <span class="icon-cont">
+                                <i class="fas fa-coins"></i>
+                            </span>
+                            <h3>Investment Tracking</h3>
+                            <p>
+                                Keep track of your investments and see your growth in one place.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <span class="icon-cont">
+                                <i class="fas fa-sliders"></i>
+                            </span>
+                            <h3>Budget Planning</h3>
+                            <p>
+                                Set budgets and stay on track with smart alerts and spending limits.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <span class="icon-cont">
+                                <i class="fas fa-shield-alt"></i>
+                            </span>
+                            <h3>Secure & Private</h3>
+                            <p>
+                                Your financial data is encrypted and secure at every step.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="col-md-4">
+                        <div class="feature-card text-center">
+                            <span class="icon-cont">
+                                <i class="fas fa-mobile-alt"></i>
+                            </span>
+                            <h3>Mobile First</h3>
+                            <p>
+                                Access your finances anytime, anywhere with a seamless mobile experience.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="why-section reveal">
+            <div class="container">
+                <div class="row align-items-center g-lg-5 g-4">
+
+                    <!-- Image -->
+                    <div class="col-md-6 order-1 order-md-1">
+                        <div class="why-image text-center">
+                            <img loading="lazy" src="https://placehold.co/800x400" alt="Finovo Financial Overview"
+                                class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-md-6 order-2 order-md-2">
+                        <div class="why-content">
+
+                            <h2 class="section-title">
+                                Smarter Money Management Starts Here
+                            </h2>
+
+                            <p class="section-text">
+                                Managing money shouldn’t be complicated. Finovo brings all your finances
+                                into one simple dashboard — so you can track spending, monitor investments,
+                                and plan your future without stress.
+                            </p>
+
+                            <p class="section-text">
+                                With AI-powered insights and real-time tracking, you always know
+                                where your money is going and how to improve it.
+                            </p>
+
+                            <a href="#" class="btn btn-primary mt-3">
+                                Explore Features
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section reveal">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left Content -->
+                    <div class="col-md-6">
+                        <div class="stats-content">
+                            <h2 class="section-title">
+                                Helping You Take Control of Your Finances
+                            </h2>
+                            <p class="section-subtitle">
+                                Finovo empowers users to track, save, and grow their money with confidence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Stats -->
+                    <div class="col-md-6">
+                        <div class="stats-grid">
+
+                            <div class="stat-item d-flex align-items-center">
+                                <div class="icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div>
+                                    <h4>10K+</h4>
+                                    <span>Active Users</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-item d-flex align-items-center">
+                                <div class="icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div>
+                                    <h4>₹50M+</h4>
+                                    <span>Transactions Tracked</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-item d-flex align-items-center">
+                                <div class="icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div>
+                                    <h4>₹10M+</h4>
+                                    <span>Money Saved</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-item d-flex align-items-center">
+                                <div class="icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div>
+                                    <h4>4.8★</h4>
+                                    <span>User Satisfaction</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase-section reveal">
+            <div class="container">
+                <div class="row align-items-center g-lg-5 g-4">
+
+                    <!-- Image -->
+                    <div class="col-md-6 order-1 order-md-1">
+                        <div class="showcase-image text-center">
+                            <img loading="lazy" src="https://placehold.co/800x400" alt="Finovo App Interface"
+                                class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-md-6 order-2 order-md-2">
+                        <div class="showcase-content">
+
+                            <h2 class="section-title">
+                                See Your Finances Clearly, Anytime
+                            </h2>
+
+                            <p class="section-text">
+                                Finovo gives you a complete view of your financial life in one place.
+                                Track expenses, monitor investments, and stay in control with a clean,
+                                easy-to-use dashboard.
+                            </p>
+
+                            <p class="section-text">
+                                Whether you're planning your monthly budget or reviewing your spending habits,
+                                everything is designed to be simple, fast, and insightful.
+                            </p>
+
+                            <ul class="showcase-list">
+                                <li class="showcase-item"><i class="fas fa-check-circle"></i> Real-time expense tracking
+                                </li>
+                                <li class="showcase-item"><i class="fas fa-check-circle"></i> Visual charts & insights
+                                </li>
+                                <li class="showcase-item"><i class="fas fa-check-circle"></i> Smart budgeting tools</li>
+                                <li class="showcase-item"><i class="fas fa-check-circle"></i> Mobile-first experience
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary">
+                                Try the Demo
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section reveal">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="section-title">
+                        What Our Users Say
+                    </h2>
+                    <p class="section-subtitle mb-0">
+                        Real experiences from people managing their money smarter with Finovo
+                    </p>
+                </div>
+
+                <!-- Owl Carousel -->
+                <div class="testimonial-carousel owl-carousel">
+
+                    <!-- Item -->
+                    <div class="testimonial-card">
+
+                        <!-- Rating -->
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-text">
+                            Finovo completely changed how I track my expenses. The insights are super helpful and easy
+                            to understand.
+                        </p>
+
+                        <div class="testimonial-user d-flex align-items-center">
+                            <img src="https://i.pravatar.cc/50?img=1" alt="User" class="user-avatar">
+                            <div>
+                                <h5>Rahul Sharma</h5>
+                                <span>Working Professional</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Repeat -->
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <p class="testimonial-text">
+                            I finally started saving money regularly thanks to Finovo’s smart budgeting tools.
+                        </p>
+
+                        <div class="testimonial-user d-flex align-items-center">
+                            <img src="https://i.pravatar.cc/50?img=2" alt="User" class="user-avatar">
+                            <div>
+                                <h5>Priya Mehta</h5>
+                                <span>Freelancer</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-card">
+
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-text">
+                            Clean UI, powerful features, and everything in one place. Exactly what I needed.
+                        </p>
+
+                        <div class="testimonial-user d-flex align-items-center">
+                            <img src="https://i.pravatar.cc/50?img=3" alt="User" class="user-avatar">
+                            <div>
+                                <h5>Amit Verma</h5>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="blog-section reveal">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="section-title">
+                        Smart Money Tips & Insights
+                    </h2>
+                    <p class="section-subtitle">
+                        Learn how to manage, save, and grow your money with expert advice
+                    </p>
+                </div>
+
+                <!-- Blog Cards -->
+                <div class="row g-4">
+
+                    <!-- Blog 1 -->
+                    <div class="col-md-4">
+                        <div class="blog-card">
+                            <div class="img-cont">
+                                <!-- Category Badge -->
+                                <span class="blog-badge">Budgeting</span>
+
+                                <!-- Gradient Overlay -->
+                                <div class="img-overlay"></div>
+                                <img loading="lazy" src="https://placehold.co/600x400" alt="Budgeting Tips"
+                                    class="img-fluid">
+                            </div>
+                            <!-- Meta -->
+                            <div class="blog-meta">
+                                <span>Mar 20, 2026</span>
+                                <span>• 5 min read</span>
+                            </div>
+                            <p class="blog-title">
+                                5 Simple Budgeting Tips to Save More Every Month
+                            </p>
+                            <a href="#" class="blog-link">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog 2 -->
+                    <div class="col-md-4">
+                        <div class="blog-card">
+                            <div class="img-cont">
+                                <!-- Category Badge -->
+                                <span class="blog-badge">Budgeting</span>
+
+                                <!-- Gradient Overlay -->
+                                <div class="img-overlay"></div>
+                                <img loading="lazy" src="https://placehold.co/600x400" alt="Expense Tracking"
+                                    class="img-fluid">
+                            </div>
+                            <!-- Meta -->
+                            <div class="blog-meta">
+                                <span>Mar 20, 2026</span>
+                                <span>• 5 min read</span>
+                            </div>
+                            <p class="blog-title">
+                                How to Track Your Expenses Without Stress
+                            </p>
+                            <a href="#" class="blog-link">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog 3 -->
+                    <div class="col-md-4">
+                        <div class="blog-card">
+                            <div class="img-cont">
+                                <!-- Category Badge -->
+                                <span class="blog-badge">Budgeting</span>
+
+                                <!-- Gradient Overlay -->
+                                <div class="img-overlay"></div>
+                                <img loading="lazy" src="https://placehold.co/600x400" alt="Investment Basics"
+                                    class="img-fluid">
+                            </div>
+                            <!-- Meta -->
+                            <div class="blog-meta">
+                                <span>Mar 20, 2026</span>
+                                <span>• 5 min read</span>
+                            </div>
+                            <p class="blog-title">
+                                Beginner’s Guide to Smart Investing
+                            </p>
+                            <a href="#" class="blog-link">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-section text-center reveal">
+            <div class="container">
+
+                <h2 class="cta-title">
+                    Take Control of Your Money Today
+                </h2>
+
+                <p class="cta-subtitle">
+                    Start tracking your expenses, managing your investments, and building better financial habits with
+                    Finovo.
+                </p>
+
+                <div class="cta-buttons mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="#" class="btn btn-primary">
+                        Get Started Free
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        View Demo
+                    </a>
+                </div>
+
+                <!-- Trust Line -->
+                <div class="cta-trust mt-3">
+                    <small>
+                        No credit card required • Free to start • Secure & private
+                    </small>
+                </div>
+
+                <!-- Urgency Line -->
+                <div class="cta-urgency">
+                    <small>Limited time — Start free today</small>
+                </div>
+
+                <!-- Trust Line -->
+                <div class="cta-trust">
+                    <small>
+                        No credit card required • Free to start • Secure & private
+                    </small>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+    <footer class="footer reveal">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Brand -->
+                <div class="col-md-3">
+                    <div class="footer-brand">
+                        <h4>Finovo</h4>
+                        <p class="footer-tagline">
+                            Smart Money, Simple Life
+                        </p>
+
+                        <p class="footer-copy">
+                            © 2026 Finovo. All rights reserved.
+                        </p>
+
+                        <!-- Social -->
+                        <div class="footer-social d-flex gap-3 mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Product</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">App Demo</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Stay Updated</h5>
+
+                    <p class="footer-text">
+                        Get the latest financial tips and updates.
+                    </p>
+
+                    <form class="footer-form mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+
+</html>
