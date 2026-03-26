@@ -1,48 +1,32 @@
 /* Base */
 
-@import url('./base/_variables.css');
-@import url('./base/_reset.css');
-@import url('./base/_base.css');
-@import url('./base/_typography.css');
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/base.css');
+@import url('./base/typography.css');
 
 /* Bootstrap Overrides */
 
-@import url('./bootstrap-overrides/_bootstrap-map.css');
-@import url('./bootstrap-overrides/_bootstrap-theme.css');
+@import url('./bootstrap-overrides/bootstrap-map.css');
+@import url('./bootstrap-overrides/bootstrap-theme.css');
 
 /* Componet */
 
-@import url('./component/_component.css');
+@import url('./component/component.css');
 
 /* Layout */
 
-@import url('./layout/_header.css');
-@import url('./layout/_footer.css');
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
 
 /* Section */
 
-@import url('./section/_hero.css');
-@import url('./section/_clients.css');
-@import url('./section/_features.css');
-@import url('./section/_why.css');
-@import url('./section/_stats.css');
-@import url('./section/_showcase.css');
-@import url('./section/_testimonial.css');
-@import url('./section/_blog.css');
-@import url('./section/_cta.css');
-
-
-
-
-
-
-
-
-
-body {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-md);
-  background-color: red;
-  color: pink;
-  padding-top: 66px;
-}
+@import url('./section/hero.css');
+@import url('./section/clients.css');
+@import url('./section/features.css');
+@import url('./section/why.css');
+@import url('./section/stats.css');
+@import url('./section/showcase.css');
+@import url('./section/testimonial.css');
+@import url('./section/blog.css');
+@import url('./section/cta.css');

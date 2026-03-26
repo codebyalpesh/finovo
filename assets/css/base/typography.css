@@ -1,0 +1,22 @@
+h1 {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+p {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+}
+
+small {
+  font-size: var(--font-size-sm);
+}

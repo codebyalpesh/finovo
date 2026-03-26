@@ -1,0 +1,105 @@
+/* =========================================
+   CLIENTS SECTION
+========================================= */
+
+.clients-section {
+  padding: var(--space-16) 0;
+  background: var(--color-gray-50);
+}
+
+/* =========================================
+   LOGOS
+========================================= */
+
+.clients-logos {
+  gap: var(--space-6);
+}
+
+/* Wrapper (needed for hover control) */
+.client-logo {
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+}
+
+/* Image */
+.client-logo img {
+  max-height: 50px;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: var(--transition-fast);
+}
+
+/* Hover */
+.client-logo:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+.clients-stats {
+  gap: var(--space-6);
+}
+
+/* Stat Card (enhanced existing class) */
+.stat {
+  background: var(--color-white);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  min-width: 140px;
+  transition: var(--transition-fast);
+}
+
+/* Hover */
+.stat:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Value */
+.stat h4 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+/* Label */
+.stat p {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .clients-section {
+    padding: var(--space-12) 0;
+  }
+
+  .clients-logos {
+    gap: var(--space-4);
+  }
+
+  .client-logo img {
+    max-height: 40px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .stat {
+    width: 100%;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,89 @@
+/* =========================================
+   BOOTSTRAP TOKEN MAPPING LAYER
+   Source of Truth: Design Tokens
+========================================= */
+
+:root {
+
+  /* ================= COLORS ================= */
+
+  --bs-primary: var(--color-primary);
+  --bs-primary-rgb: 255, 76, 41;
+
+  --bs-secondary: var(--color-secondary);
+  --bs-secondary-rgb: 108, 117, 125;
+
+  --bs-success: var(--color-success);
+  --bs-danger: var(--color-error);
+  --bs-warning: var(--color-warning);
+  --bs-info: var(--color-info);
+
+  --bs-light: var(--color-gray-100);
+  --bs-dark: var(--color-gray-900);
+
+  --bs-body-bg: var(--color-bg);
+  --bs-body-color: var(--color-text);
+
+  --bs-border-color: var(--color-gray-200);
+
+  /* ================= TYPOGRAPHY ================= */
+
+  --bs-font-sans-serif: var(--font-primary);
+  --bs-font-monospace: var(--font-secondary);
+
+  --bs-body-font-family: var(--font-primary);
+  --bs-body-font-size: var(--font-size-md);
+  --bs-body-font-weight: var(--font-weight-regular);
+  --bs-body-line-height: var(--line-height-md);
+
+  --bs-heading-color: var(--color-gray-900);
+
+  /* ================= SPACING ================= */
+
+  --bs-spacer: var(--space-4);
+
+  /* Bootstrap spacing scale mapped */
+  --bs-gutter-x: var(--space-4);
+  --bs-gutter-y: var(--space-4);
+
+  /* ================= RADIUS ================= */
+
+  --bs-border-radius: var(--radius-md);
+  --bs-border-radius-sm: var(--radius-sm);
+  --bs-border-radius-lg: var(--radius-lg);
+  --bs-border-radius-pill: var(--radius-full);
+
+  /* ================= SHADOW ================= */
+
+  --bs-box-shadow-sm: var(--shadow-sm);
+  --bs-box-shadow: var(--shadow-md);
+  --bs-box-shadow-lg: var(--shadow-lg);
+
+  /* ================= TRANSITIONS ================= */
+
+  --bs-transition: var(--transition-normal);
+
+  /* ================= LINKS ================= */
+
+  --bs-link-color: var(--color-primary);
+  --bs-link-hover-color: var(--color-primary-hover);
+
+  /* ================= BUTTONS ================= */
+
+  --bs-btn-font-weight: var(--font-weight-medium);
+  --bs-btn-border-radius: var(--radius-md);
+
+  /* ================= FORMS ================= */
+
+  --bs-input-bg: var(--color-white);
+  --bs-input-color: var(--color-text);
+  --bs-input-border-color: var(--color-gray-300);
+  --bs-input-focus-border-color: var(--color-primary);
+
+  /* ================= Z-INDEX ================= */
+
+  --bs-dropdown-zindex: var(--z-dropdown);
+  --bs-modal-zindex: var(--z-modal);
+  --bs-tooltip-zindex: var(--z-tooltip);
+
+}

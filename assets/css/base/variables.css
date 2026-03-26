@@ -1,0 +1,105 @@
+/* Inter - weights 100 to 900, no italics */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Roboto - weights 100 to 900, no italics */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+
+  /* COLORS */
+  --color-primary: #FF4C29;
+  --color-primary-hover: #e04324;
+  --color-primary-active: #c93b20;
+  --color-primary-disabled: #f5a79a;
+
+  --color-secondary: #6c757d;
+  --color-secondary-hover: #5c636a;
+  --color-secondary-active: #4b5258;
+  --color-secondary-disabled: #c4c8cc;
+
+  --color-accent: #ffc107;
+  --color-accent-hover: #e0aa06;
+  --color-accent-active: #c99705;
+  --color-accent-disabled: #ffe8a3;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* NEUTRAL SCALE */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2933;
+  --color-gray-900: #111827;
+
+  /* SEMANTIC */
+  --color-success: #28a745;
+  --color-error: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #0dcaf0;
+
+  --color-bg: #ffffff;
+  --color-text: #111827;
+
+  /* TYPOGRAPHY */
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  --line-height-xs: 1;
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.75;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* SPACING */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* RADIUS */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* SHADOW */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.15);
+
+  /* TRANSITIONS */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+
+  /* Z-INDEX */
+  --z-dropdown: 1000;
+  --z-modal: 1050;
+  --z-tooltip: 1100;
+  --z-toast: 1200;
+}

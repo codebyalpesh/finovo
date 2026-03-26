@@ -1,0 +1,191 @@
+/* =========================================
+   FEATURES SECTION
+========================================= */
+
+.features-section {
+  padding: var(--space-16) 0;
+  background: var(--color-white);
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.features-section .row {
+  margin-top: var(--space-6);
+}
+
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  padding: var(--space-6);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+
+  /* Animation base */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: featureFadeUp 0.6s ease forwards;
+}
+
+/* Hover */
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Top border animation */
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height: 3px;
+  background: var(--color-primary);
+
+  transition: var(--transition-normal);
+}
+
+.feature-card:hover::before {
+  width: 100%;
+}
+
+/* =========================================
+   STAGGER ANIMATION (FIXED)
+========================================= */
+
+/* Target column instead of card */
+.features-section .col-md-4:nth-child(1) .feature-card {
+  animation-delay: 0s;
+}
+
+.features-section .col-md-4:nth-child(2) .feature-card {
+  animation-delay: 0.1s;
+}
+
+.features-section .col-md-4:nth-child(3) .feature-card {
+  animation-delay: 0.2s;
+}
+
+.features-section .col-md-4:nth-child(4) .feature-card {
+  animation-delay: 0.3s;
+}
+
+.features-section .col-md-4:nth-child(5) .feature-card {
+  animation-delay: 0.4s;
+}
+
+.features-section .col-md-4:nth-child(6) .feature-card {
+  animation-delay: 0.5s;
+}
+
+/* Animation keyframe */
+@keyframes featureFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.icon-cont {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  margin-bottom: var(--space-4);
+
+  border-radius: var(--radius-md);
+  background: var(--color-gray-100);
+
+  transition: var(--transition-fast);
+}
+
+.icon-cont i {
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+/* Hover */
+.feature-card:hover .icon-cont {
+  background: var(--color-primary);
+}
+
+.feature-card:hover .icon-cont i {
+  color: var(--color-white);
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.feature-card h3 {
+  margin-bottom: var(--space-2);
+
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+.feature-card p {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md);
+  color: var(--color-gray-600);
+}
+
+/* =========================================
+   ACCESSIBILITY (IMPORTANT)
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .features-section {
+    padding: var(--space-12) 0;
+  }
+
+  .feature-card {
+    padding: var(--space-5);
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .feature-card {
+    text-align: center;
+  }
+
+  .icon-cont {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
